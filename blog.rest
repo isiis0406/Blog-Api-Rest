@@ -1,0 +1,28 @@
+GET http://localhost:3001/posts
+
+###
+GET  http://localhost:3001/posts/63efd275e56614d8b4e42684
+
+###
+POST http://localhost:3001/posts
+Content-Type: application/json
+
+{
+    "title": "Mon meilleur post",
+    "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo inventore ab aut! Quam obcaecati, voluptas officiis sint et autem ullam!",
+    "category": "NodeJs"
+}
+
+###
+
+PATCH http://localhost:3001/posts/63efd275e56614d8b4e42684
+Content-Type: application/json
+
+{
+    "title": "Mon nouveau post",
+    "content": "Lorem encore ipsum dolor sit amet consectetur, adipisicing elit. Illo inventore ab aut! Quam obcaecati, voluptas officiis sint et autem ullam!",
+    "category": "Baise"
+}
+
+###
+DELETE http://localhost:3001/posts/63efe8a9117e4169bce37512
